@@ -5,17 +5,17 @@
 | CCM_CLK1_N        | P16        | VDD_HIGH_CAP | CCM       | —            | CCM_CLK1_N               | —              | —                       |                          |              |
 | CCM_CLK1_P        | P17        | VDD_HIGH_CAP | CCM       | —            | CCM_CLK1_P               | —              | —                       |                          |              |
 | CCM_PMIC_STBY_REQ | U9         | VDD_SNVS_IN  | CCM       | ALT0         | CCM_PMIC_VSTBY_REQ       | Output         | —                       |                          |              |
-| CSI_DATA00        | E4         | NVCC_CSI     | GPIO      | ALT5         | GPIO4_IO21               | Input          | Keeper                  |                          |              |
-| CSI_DATA01        | E3         | NVCC_CSI     | GPIO      | ALT5         | GPIO4_IO22               | Input          | Keeper                  |                          |              |
-| CSI_DATA02        | E2         | NVCC_CSI     | GPIO      | ALT5         | GPIO4_IO23               | Input          | Keeper                  |                          |              |
-| CSI_DATA03        | E1         | NVCC_CSI     | GPIO      | ALT5         | GPIO4_IO24               | Input          | Keeper                  |                          |              |
-| CSI_DATA04        | D4         | NVCC_CSI     | GPIO      | ALT5         | GPIO4_IO25               | Input          | Keeper                  | SD card write protect    |              |
-| CSI_DATA05        | D3         | NVCC_CSI     | GPIO      | ALT5         | GPIO4_IO26               | Input          | Keeper                  | SD card detect           |              |
-| CSI_DATA06        | D2         | NVCC_CSI     | GPIO      | ALT5         | GPIO4_IO27               | Input          | Keeper                  |                          |              |
-| CSI_DATA07        | D1         | NVCC_CSI     | GPIO      | ALT5         | GPIO4_IO28               | Input          | Keeper                  | SD card V select         |              |
+| CSI_DATA00        | E4         | NVCC_CSI     | GPIO      | ALT5         | GPIO4_IO21               | Input          | Keeper                  | SPI2 SCLK                |              |
+| CSI_DATA01        | E3         | NVCC_CSI     | GPIO      | ALT5         | GPIO4_IO22               | Input          | Keeper                  | SPI2 SS0                 |              |
+| CSI_DATA02        | E2         | NVCC_CSI     | GPIO      | ALT5         | GPIO4_IO23               | Input          | Keeper                  | SPI2 MOSI                |              |
+| CSI_DATA03        | E1         | NVCC_CSI     | GPIO      | ALT5         | GPIO4_IO24               | Input          | Keeper                  | SPI2 MISO                |              |
+| CSI_DATA04        | D4         | NVCC_CSI     | GPIO      | ALT5         | GPIO4_IO25               | Input          | Keeper                  | SPI1 SCLK                |              |
+| CSI_DATA05        | D3         | NVCC_CSI     | GPIO      | ALT5         | GPIO4_IO26               | Input          | Keeper                  | SPI1 SS0                 |              |
+| CSI_DATA06        | D2         | NVCC_CSI     | GPIO      | ALT5         | GPIO4_IO27               | Input          | Keeper                  | SPI1 MOSI                |              |
+| CSI_DATA07        | D1         | NVCC_CSI     | GPIO      | ALT5         | GPIO4_IO28               | Input          | Keeper                  | SPI1 MISO                |              |
 | CSI_HSYNC         | F3         | NVCC_CSI     | GPIO      | ALT5         | GPIO4_IO20               | Input          | Keeper                  |                          |              |
-| CSI_MCLK          | F5         | NVCC_CSI     | GPIO      | ALT5         | GPIO4_IO17               | Input          | Keeper                  |                          |              |
-| CSI_PIXCLK        | E5         | NVCC_CSI     | GPIO      | ALT5         | GPIO4_IO18               | Input          | Keeper                  |                          |              |
+| CSI_MCLK          | F5         | NVCC_CSI     | GPIO      | ALT5         | GPIO4_IO17               | Input          | Keeper                  | EMMC card detect = VSS   |              |
+| CSI_PIXCLK        | E5         | NVCC_CSI     | GPIO      | ALT5         | GPIO4_IO18               | Input          | Keeper                  | EMMC write protect = VSS |              |
 | CSI_VSYNC         | F2         | NVCC_CSI     | GPIO      | ALT5         | GPIO4_IO19               | Input          | Keeper                  |                          |              |
 | DRAM_ADDR00       | L5         | NVCC_DRAM    | MMDC      | ALT0         | DRAM_ADDR00              | Output         | 100 kOhm pull-up        | DDR3                     |              |
 | DRAM_ADDR01       | H2         | NVCC_DRAM    | DDR       | ALT0         | DRAM_ADDR01              | Output         | 100 kOhm pull-up        | DDR3                     |              |
@@ -71,55 +71,55 @@
 | DRAM_SDQS1_P      | T1         | NVCC_DRAM    | DDRCLK    | ALT0         | DRAM_SDQS1_P             | Input          | 100 kOhm pull-down      |                          |              |
 | DRAM_SDWE_B       | J1         | NVCC_DRAM    | DDR       | ALT0         | DRAM_SDWE_B              | Output         | 100 kOhm pull-up        | DDR3                     |              |
 | DRAM_ZQPAD        | N4         | NVCC_DRAM    | GPIO      | —            | DRAM_ZQPAD               | Input          | Keeper                  | DDR3                     |              |
-| ENET1_RX_DATA0    | F16        | NVCC_ENET    | GPIO      | ALT5         | GPIO2_IO0                | Input          | Keeper                  |                          |              |
-| ENET1_RX_DATA1    | E17        | NVCC_ENET    | GPIO      | ALT5         | GPIO2_IO1                | Input          | Keeper                  |                          |              |
-| ENET1_RX_EN       | E16        | NVCC_ENET    | GPIO      | ALT5         | GPIO2_IO2                | Input          | Keeper                  |                          |              |
-| ENET1_RX_ER       | D15        | NVCC_ENET    | GPIO      | ALT5         | GPIO2_IO7                | Input          | Keeper                  |                          |              |
+| ENET1_RX_DATA0    | F16        | NVCC_ENET    | GPIO      | ALT5         | GPIO2_IO0                | Input          | Keeper                  | encoder                  |              |
+| ENET1_RX_DATA1    | E17        | NVCC_ENET    | GPIO      | ALT5         | GPIO2_IO1                | Input          | Keeper                  | encoder                  |              |
+| ENET1_RX_EN       | E16        | NVCC_ENET    | GPIO      | ALT5         | GPIO2_IO2                | Input          | Keeper                  | encoder                  |              |
+| ENET1_RX_ER       | D15        | NVCC_ENET    | GPIO      | ALT5         | GPIO2_IO7                | Input          | Keeper                  | button                   |              |
 | ENET1_TX_CLK      | F14        | NVCC_ENET    | GPIO      | ALT5         | GPIO2_IO6                | Input          | Keeper                  |                          |              |
-| ENET1_TX_DATA0    | E15        | NVCC_ENET    | GPIO      | ALT5         | GPIO2_IO3                | Input          | Keeper                  |                          |              |
-| ENET1_TX_DATA1    | E14        | NVCC_ENET    | GPIO      | ALT5         | GPIO2_IO4                | Input          | Keeper                  |                          |              |
-| ENET1_TX_EN       | F15        | NVCC_ENET    | GPIO      | ALT5         | GPIO2_IO5                | Input          | Keeper                  |                          |              |
-| ENET2_RX_DATA0    | C17        | NVCC_ENET    | GPIO      | ALT5         | GPIO2_IO8                | Input          | Keeper                  |                          |              |
-| ENET2_RX_DATA1    | C16        | NVCC_ENET    | GPIO      | ALT5         | GPIO2_IO9                | Input          | Keeper                  |                          |              |
-| ENET2_RX_EN       | B17        | NVCC_ENET    | GPIO      | ALT5         | GPIO2_IO10               | Input          | Keeper                  |                          |              |
-| ENET2_RX_ER       | D16        | NVCC_ENET    | GPIO      | ALT5         | GPIO2_IO15               | Input          | Keeper                  |                          |              |
-| ENET2_TX_CLK      | D17        | NVCC_ENET    | GPIO      | ALT5         | GPIO2_IO14               | Input          | Keeper                  |                          |              |
-| ENET2_TX_DATA0    | A15        | NVCC_ENET    | GPIO      | ALT5         | GPIO2_IO11               | Input          | Keeper                  |                          |              |
-| ENET2_TX_DATA1    | A16        | NVCC_ENET    | GPIO      | ALT5         | GPIO2_IO12               | Input          | Keeper                  |                          |              |
-| ENET2_TX_EN       | B15        | NVCC_ENET    | GPIO      | ALT5         | GPIO2_IO13               | Input          | Keeper                  |                          |              |
-| GPIO1_IO00        | K13        | NVCC_GPIO    | GPIO      | ALT5         | GPIO1_IO00               | Input          | Keeper                  |                          |              |
-| GPIO1_IO01        | L15        | NVCC_GPIO    | GPIO      | ALT5         | GPIO1_IO01               | Input          | Keeper                  |                          |              |
-| GPIO1_IO02        | L14        | NVCC_GPIO    | GPIO      | ALT5         | GPIO1_IO02               | Input          | Keeper                  |                          |              |
-| GPIO1_IO03        | L17        | NVCC_GPIO    | GPIO      | ALT5         | GPIO1_IO03               | Input          | Keeper                  |                          |              |
-| GPIO1_IO04        | M16        | NVCC_GPIO    | GPIO      | ALT5         | GPIO1_IO04               | Input          | Keeper                  |                          |              |
+| ENET1_TX_DATA0    | E15        | NVCC_ENET    | GPIO      | ALT5         | GPIO2_IO3                | Input          | Keeper                  | SD card V select         |              |
+| ENET1_TX_DATA1    | E14        | NVCC_ENET    | GPIO      | ALT5         | GPIO2_IO4                | Input          | Keeper                  | RMII MDIO                |              |
+| ENET1_TX_EN       | F15        | NVCC_ENET    | GPIO      | ALT5         | GPIO2_IO5                | Input          | Keeper                  | RMII MDC                 |              |
+| ENET2_RX_DATA0    | C17        | NVCC_ENET    | GPIO      | ALT5         | GPIO2_IO8                | Input          | Keeper                  | RMII                     |              |
+| ENET2_RX_DATA1    | C16        | NVCC_ENET    | GPIO      | ALT5         | GPIO2_IO9                | Input          | Keeper                  | RMII                     |              |
+| ENET2_RX_EN       | B17        | NVCC_ENET    | GPIO      | ALT5         | GPIO2_IO10               | Input          | Keeper                  | RMII carrier sense       |              |
+| ENET2_RX_ER       | D16        | NVCC_ENET    | GPIO      | ALT5         | GPIO2_IO15               | Input          | Keeper                  | RMII error sense (opt)   |              |
+| ENET2_TX_CLK      | D17        | NVCC_ENET    | GPIO      | ALT5         | GPIO2_IO14               | Input          | Keeper                  | RMII REF_CLK2 out        |              |
+| ENET2_TX_DATA0    | A15        | NVCC_ENET    | GPIO      | ALT5         | GPIO2_IO11               | Input          | Keeper                  | RMII                     |              |
+| ENET2_TX_DATA1    | A16        | NVCC_ENET    | GPIO      | ALT5         | GPIO2_IO12               | Input          | Keeper                  | RMII                     |              |
+| ENET2_TX_EN       | B15        | NVCC_ENET    | GPIO      | ALT5         | GPIO2_IO13               | Input          | Keeper                  | RMII                     |              |
+| GPIO1_IO00        | K13        | NVCC_GPIO    | GPIO      | ALT5         | GPIO1_IO00               | Input          | Keeper                  | touch sense ADC          |              |
+| GPIO1_IO01        | L15        | NVCC_GPIO    | GPIO      | ALT5         | GPIO1_IO01               | Input          | Keeper                  | touch sense ADC          |              |
+| GPIO1_IO02        | L14        | NVCC_GPIO    | GPIO      | ALT5         | GPIO1_IO02               | Input          | Keeper                  | touch sense ADC          |              |
+| GPIO1_IO03        | L17        | NVCC_GPIO    | GPIO      | ALT5         | GPIO1_IO03               | Input          | Keeper                  | touch sense ADC          |              |
+| GPIO1_IO04        | M16        | NVCC_GPIO    | GPIO      | ALT5         | GPIO1_IO04               | Input          | Keeper                  | touch sense ADC          |              |
 | GPIO1_IO05        | M17        | NVCC_GPIO    | GPIO      | ALT5         | GPIO1_IO05               | Input          | Keeper                  |                          |              |
 | GPIO1_IO06        | K17        | NVCC_GPIO    | GPIO      | ALT5         | GPIO1_IO06               | Input          | Keeper                  |                          |              |
 | GPIO1_IO07        | L16        | NVCC_GPIO    | GPIO      | ALT5         | GPIO1_IO07               | Input          | Keeper                  |                          |              |
-| GPIO1_IO08        | N17        | NVCC_GPIO    | GPIO      | ALT5         | GPIO1_IO08               | Input          | Keeper                  |                          |              |
-| GPIO1_IO09        | M15        | NVCC_GPIO    | GPIO      | ALT5         | GPIO1_IO09               | Input          | Keeper                  |                          |              |
+| GPIO1_IO08        | N17        | NVCC_GPIO    | GPIO      | ALT5         | GPIO1_IO08               | Input          | Keeper                  | PWM1 (backlight)         |              |
+| GPIO1_IO09        | M15        | NVCC_GPIO    | GPIO      | ALT5         | GPIO1_IO09               | Input          | Keeper                  | PWM2 (backlight)         |              |
 | JTAG_MOD          | P15        | NVCC_GPIO    | SJC       | ALT0         | SJC_MOD                  | Input          | 100 kOhm pull-up        | JTAG                     |              |
 | JTAG_TCK          | M14        | NVCC_GPIO    | SJC       | ALT0         | SJC_TCK                  | Input          | 47 kOhm pull-up         | JTAG                     |              |
 | JTAG_TDI          | N16        | NVCC_GPIO    | SJC       | ALT0         | SJC_TDI                  | Input          | 47 kOhm pull-up         | JTAG                     |              |
 | JTAG_TDO          | N15        | NVCC_GPIO    | SJC       | ALT0         | SJC_TDO                  | Output         | Keeper                  | JTAG                     |              |
 | JTAG_TMS          | P14        | NVCC_GPIO    | SJC       | ALT0         | SJC_TMS                  | Input          | 47 kOhm pull-up         | JTAG                     |              |
 | JTAG_TRST_B       | N14        | NVCC_GPIO    | SJC       | ALT0         | SJC_TRSTB                | Input          | 47 kOhm pull-up         | JTAG                     |              |
-| LCD_CLK           | A8         | NVCC_LCD     | GPIO      | ALT5         | GPIO3_IO0                | Input          | Keeper                  |                          |              |
-| LCD_DATA00        | B9         | NVCC_LCD     | GPIO      | ALT5         | GPIO3_IO5                | Input          | Keeper                  |                          |              |
-| LCD_DATA01        | A9         | NVCC_LCD     | GPIO      | ALT5         | GPIO3_IO6                | Input          | Keeper                  |                          |              |
-| LCD_DATA02        | E10        | NVCC_LCD     | GPIO      | ALT5         | GPIO3_IO7                | Input          | Keeper                  |                          |              |
-| LCD_DATA03        | D10        | NVCC_LCD     | GPIO      | ALT5         | GPIO3_IO8                | Input          | Keeper                  |                          |              |
-| LCD_DATA04        | C10        | NVCC_LCD     | GPIO      | ALT5         | GPIO3_IO9                | Input          | Keeper                  |                          |              |
-| LCD_DATA05        | B10        | NVCC_LCD     | GPIO      | ALT5         | GPIO3_IO10               | Input          | Keeper                  |                          |              |
-| LCD_DATA06        | A10        | NVCC_LCD     | GPIO      | ALT5         | GPIO3_IO11               | Input          | Keeper                  |                          |              |
-| LCD_DATA07        | D11        | NVCC_LCD     | GPIO      | ALT5         | GPIO3_IO12               | Input          | Keeper                  |                          |              |
-| LCD_DATA08        | B11        | NVCC_LCD     | GPIO      | ALT5         | GPIO3_IO13               | Input          | Keeper                  |                          |              |
-| LCD_DATA09        | A11        | NVCC_LCD     | GPIO      | ALT5         | GPIO3_IO14               | Input          | Keeper                  |                          |              |
-| LCD_DATA10        | E12        | NVCC_LCD     | GPIO      | ALT5         | GPIO3_IO15               | Input          | Keeper                  |                          |              |
-| LCD_DATA11        | D12        | NVCC_LCD     | GPIO      | ALT5         | GPIO3_IO16               | Input          | Keeper                  |                          |              |
-| LCD_DATA12        | C12        | NVCC_LCD     | GPIO      | ALT5         | GPIO3_IO17               | Input          | Keeper                  |                          |              |
-| LCD_DATA13        | B12        | NVCC_LCD     | GPIO      | ALT5         | GPIO3_IO18               | Input          | Keeper                  |                          |              |
-| LCD_DATA14        | A12        | NVCC_LCD     | GPIO      | ALT5         | GPIO3_IO19               | Input          | Keeper                  |                          |              |
-| LCD_DATA15        | D13        | NVCC_LCD     | GPIO      | ALT5         | GPIO3_IO20               | Input          | Keeper                  |                          |              |
+| LCD_CLK           | A8         | NVCC_LCD     | GPIO      | ALT5         | GPIO3_IO0                | Input          | Keeper                  | LCD                      |              |
+| LCD_DATA00        | B9         | NVCC_LCD     | GPIO      | ALT5         | GPIO3_IO5                | Input          | Keeper                  | LCD                      |              |
+| LCD_DATA01        | A9         | NVCC_LCD     | GPIO      | ALT5         | GPIO3_IO6                | Input          | Keeper                  | LCD                      |              |
+| LCD_DATA02        | E10        | NVCC_LCD     | GPIO      | ALT5         | GPIO3_IO7                | Input          | Keeper                  | LCD                      |              |
+| LCD_DATA03        | D10        | NVCC_LCD     | GPIO      | ALT5         | GPIO3_IO8                | Input          | Keeper                  | LCD                      |              |
+| LCD_DATA04        | C10        | NVCC_LCD     | GPIO      | ALT5         | GPIO3_IO9                | Input          | Keeper                  | LCD                      |              |
+| LCD_DATA05        | B10        | NVCC_LCD     | GPIO      | ALT5         | GPIO3_IO10               | Input          | Keeper                  | LCD                      |              |
+| LCD_DATA06        | A10        | NVCC_LCD     | GPIO      | ALT5         | GPIO3_IO11               | Input          | Keeper                  | LCD                      |              |
+| LCD_DATA07        | D11        | NVCC_LCD     | GPIO      | ALT5         | GPIO3_IO12               | Input          | Keeper                  | LCD                      |              |
+| LCD_DATA08        | B11        | NVCC_LCD     | GPIO      | ALT5         | GPIO3_IO13               | Input          | Keeper                  | LCD                      |              |
+| LCD_DATA09        | A11        | NVCC_LCD     | GPIO      | ALT5         | GPIO3_IO14               | Input          | Keeper                  | LCD                      |              |
+| LCD_DATA10        | E12        | NVCC_LCD     | GPIO      | ALT5         | GPIO3_IO15               | Input          | Keeper                  | LCD                      |              |
+| LCD_DATA11        | D12        | NVCC_LCD     | GPIO      | ALT5         | GPIO3_IO16               | Input          | Keeper                  | LCD                      |              |
+| LCD_DATA12        | C12        | NVCC_LCD     | GPIO      | ALT5         | GPIO3_IO17               | Input          | Keeper                  | LCD                      |              |
+| LCD_DATA13        | B12        | NVCC_LCD     | GPIO      | ALT5         | GPIO3_IO18               | Input          | Keeper                  | LCD                      |              |
+| LCD_DATA14        | A12        | NVCC_LCD     | GPIO      | ALT5         | GPIO3_IO19               | Input          | Keeper                  | LCD                      |              |
+| LCD_DATA15        | D13        | NVCC_LCD     | GPIO      | ALT5         | GPIO3_IO20               | Input          | Keeper                  | LCD                      |              |
 | LCD_DATA16        | C13        | NVCC_LCD     | GPIO      | ALT5         | GPIO3_IO21               | Input          | Keeper                  |                          |              |
 | LCD_DATA17        | B13        | NVCC_LCD     | GPIO      | ALT5         | GPIO3_IO22               | Input          | Keeper                  |                          |              |
 | LCD_DATA18        | A13        | NVCC_LCD     | GPIO      | ALT5         | GPIO3_IO23               | Input          | Keeper                  |                          |              |
@@ -128,10 +128,10 @@
 | LCD_DATA21        | B14        | NVCC_LCD     | GPIO      | ALT5         | GPIO3_IO26               | Input          | Keeper                  |                          |              |
 | LCD_DATA22        | A14        | NVCC_LCD     | GPIO      | ALT5         | GPIO3_IO27               | Input          | Keeper                  |                          |              |
 | LCD_DATA23        | B16        | NVCC_LCD     | GPIO      | ALT5         | GPIO3_IO28               | Input          | Keeper                  |                          |              |
-| LCD_ENABLE        | B8         | NVCC_LCD     | GPIO      | ALT5         | GPIO3_IO1                | Input          | Keeper                  |                          |              |
-| LCD_HSYNC         | D9         | NVCC_LCD     | GPIO      | ALT5         | GPIO3_IO2                | Input          | Keeper                  |                          |              |
-| LCD_RESET         | E9         | NVCC_LCD     | GPIO      | ALT5         | GPIO3_IO4                | Input          | Keeper                  |                          |              |
-| LCD_VSYNC         | C9         | NVCC_LCD     | GPIO      | ALT5         | GPIO3_IO3                | Input          | Keeper                  |                          |              |
+| LCD_ENABLE        | B8         | NVCC_LCD     | GPIO      | ALT5         | GPIO3_IO1                | Input          | Keeper                  | LCD                      |              |
+| LCD_HSYNC         | D9         | NVCC_LCD     | GPIO      | ALT5         | GPIO3_IO2                | Input          | Keeper                  | LCD                      |              |
+| LCD_RESET         | E9         | NVCC_LCD     | GPIO      | ALT5         | GPIO3_IO4                | Input          | Keeper                  | LCD                      |              |
+| LCD_VSYNC         | C9         | NVCC_LCD     | GPIO      | ALT5         | GPIO3_IO3                | Input          | Keeper                  | LCD                      |              |
 | NAND_ALE          | B4         | NVCC_NAND    | GPIO      | ALT5         | GPIO4_IO10               | Input          | Keeper                  | EMMC                     |              |
 | NAND_CE0_B        | C5         | NVCC_NAND    | GPIO      | ALT5         | GPIO4_IO13               | Input          | Keeper                  |                          |              |
 | NAND_CE1_B        | B5         | NVCC_NAND    | GPIO      | ALT5         | GPIO4_IO14               | Input          | Keeper                  |                          |              |
@@ -171,22 +171,22 @@
 | SNVS_TAMPER8      | N9         | VDD_SNVS_IN  | GPIO      | ALT5         | GPIO5_IO08/SNVS_TAMPER81 | Input          | Keeper/Not connected1,2 |                          |              |
 | SNVS_TAMPER9      | R6         | VDD_SNVS_IN  | GPIO      | ALT5         | GPIO5_IO09/SNVS_TAMPER91 | Input          | Keeper/Not connected1,2 |                          |              |
 | TEST_MODE         | N7         | VDD_SNVS_IN  | TCU       | ALT0         | TCU_TEST_MODE            | Input          | Keeper                  |                          |              |
-| UART1_CTS_B       | K15        | NVCC_UART    | GPIO      | ALT5         | GPIO1_IO18               | Input          | Keeper                  | EMMC write protect = VSS |              |
-| UART1_RTS_B       | J14        | NVCC_UART    | GPIO      | ALT5         | GPIO1_IO19               | Input          | Keeper                  | EMMC detect = VSS        |              |
+| UART1_CTS_B       | K15        | NVCC_UART    | GPIO      | ALT5         | GPIO1_IO18               | Input          | Keeper                  | SD card write protect    |              |
+| UART1_RTS_B       | J14        | NVCC_UART    | GPIO      | ALT5         | GPIO1_IO19               | Input          | Keeper                  | SD card detect           |              |
 | UART1_RX_DATA     | K16        | NVCC_UART    | GPIO      | ALT5         | GPIO1_IO17               | Input          | Keeper                  | UART1                    |              |
 | UART1_TX_DATA     | K14        | NVCC_UART    | GPIO      | ALT5         | GPIO1_IO16               | Input          | Keeper                  | UART1                    |              |
-| UART2_CTS_B       | J15        | NVCC_UART    | GPIO      | ALT5         | GPIO1_IO22               | Input          | Keeper                  |                          |              |
-| UART2_RTS_B       | H14        | NVCC_UART    | GPIO      | ALT5         | GPIO1_IO23               | Input          | Keeper                  |                          |              |
-| UART2_RX_DATA     | J16        | NVCC_UART    | GPIO      | ALT5         | GPIO1_IO21               | Input          | Keeper                  |                          |              |
-| UART2_TX_DATA     | J17        | NVCC_UART    | GPIO      | ALT5         | GPIO1_IO20               | Input          | Keeper                  |                          |              |
+| UART2_CTS_B       | J15        | NVCC_UART    | GPIO      | ALT5         | GPIO1_IO22               | Input          | Keeper                  | UART2                    |              |
+| UART2_RTS_B       | H14        | NVCC_UART    | GPIO      | ALT5         | GPIO1_IO23               | Input          | Keeper                  | UART2                    |              |
+| UART2_RX_DATA     | J16        | NVCC_UART    | GPIO      | ALT5         | GPIO1_IO21               | Input          | Keeper                  | UART2                    |              |
+| UART2_TX_DATA     | J17        | NVCC_UART    | GPIO      | ALT5         | GPIO1_IO20               | Input          | Keeper                  | UART2                    |              |
 | UART3_CTS_B       | H15        | NVCC_UART    | GPIO      | ALT5         | GPIO1_IO26               | Input          | Keeper                  |                          |              |
 | UART3_RTS_B       | G14        | NVCC_UART    | GPIO      | ALT5         | GPIO1_IO27               | Input          | Keeper                  |                          |              |
 | UART3_RX_DATA     | H16        | NVCC_UART    | GPIO      | ALT5         | GPIO1_IO25               | Input          | Keeper                  |                          |              |
 | UART3_TX_DATA     | H17        | NVCC_UART    | GPIO      | ALT5         | GPIO1_IO24               | Input          | Keeper                  |                          |              |
-| UART4_RX_DATA     | G16        | NVCC_UART    | GPIO      | ALT5         | GPIO1_IO29               | Input          | Keeper                  |                          |              |
-| UART4_TX_DATA     | G17        | NVCC_UART    | GPIO      | ALT5         | GPIO1_IO28               | Input          | Keeper                  |                          |              |
-| UART5_RX_DATA     | G13        | NVCC_UART    | GPIO      | ALT5         | GPIO1_IO31               | Input          | Keeper                  |                          |              |
-| UART5_TX_DATA     | F17        | NVCC_UART    | GPIO      | ALT5         | GPIO1_IO30               | Input          | Keeper                  |                          |              |
+| UART4_RX_DATA     | G16        | NVCC_UART    | GPIO      | ALT5         | GPIO1_IO29               | Input          | Keeper                  | I2C1                     |              |
+| UART4_TX_DATA     | G17        | NVCC_UART    | GPIO      | ALT5         | GPIO1_IO28               | Input          | Keeper                  | I2C1                     |              |
+| UART5_RX_DATA     | G13        | NVCC_UART    | GPIO      | ALT5         | GPIO1_IO31               | Input          | Keeper                  | I2C2                     |              |
+| UART5_TX_DATA     | F17        | NVCC_UART    | GPIO      | ALT5         | GPIO1_IO30               | Input          | Keeper                  | I2C2                     |              |
 | USB_OTG1_CHD_B    | U16        | OPEN         | DRAIN     | GPIO         | —                        | USB_OTG1_CHD_B | — —                     | - not used               |              |
 | USB_OTG1_DN       | T15        | VDD_USB_CAP  | ANALOG    | —            | USB_OTG1_DN              | —              | —                       | USB device               |              |
 | USB_OTG1_DP       | U15        | VDD_USB_CAP  | ANALOG    | —            | USB_OTG1_DP              | —              | —                       | USB device               |              |
@@ -196,3 +196,10 @@
 | USB_OTG2_VBUS     | U12        | USB_VBUS     | VBUS      | POWER        | —                        | USB_OTG2_VBUS  | — —                     | USB host to hub          |              |
 | XTALI             | T16        | NVCC_PLL     | ANALOG    | —            | XTALI                    | —              | —                       | 24MHz crystal            |              |
 | XTALO             | T17        | NVCC_PLL     | ANALOG    | —            | XTALO                    | —              | —                       | 24MHz crystal            |              |
+
+| Unassigned signal |
+|-------------------|
+| SPI1 SS GPIO      |
+| SPI2 SS GPIO      |
+| GPIO LEDs         |
+| GPIO buttons      |
