@@ -323,3 +323,5 @@
 | VDD_HIGH_IN   |     3.3 |
 | VDD_SNVS_IN   |     3.3 |
 | VDDA_ADC_3P3  |     3.3 |
+
+(paren) means supplied by SoC
