@@ -1,3 +1,11 @@
+* Unassigned
+- SPI1 SS GPIO
+- SPI2 SS GPIO
+- GPIO LEDs
+- GPIO buttons
+- spi/hd44780 display (mux on same pins)
+
+* Pin overview
 | Ball Name         | 14x14 Ball | Power Group   | Ball Type | Default Mode | Default Function         | Input/Output   | Value                   | Almond use                                    | schematic group |
 |-------------------+------------+---------------+-----------+--------------+--------------------------+----------------+-------------------------+-----------------------------------------------+-----------------|
 | BOOT_MODE0        | T10        | VDD_SNVS_IN   | GPIO      | ALT5         | GPIO5_IO10               | Input          | 100 kOhm pull-down      |                                               | CONTROL         |
@@ -291,6 +299,7 @@
 | VSS               | U14        |               | POWER     | POWER        |                          |                |                         |                                               | POWER           |
 | VSS               | U17        |               | POWER     | POWER        |                          |                |                         |                                               | POWER           |
 
+* Power domains
 | Power domain  | Voltage |
 |---------------+---------|
 | GPANAIO       |   float |
@@ -314,11 +323,3 @@
 | VDD_HIGH_IN   |     3.3 |
 | VDD_SNVS_IN   |     3.3 |
 | VDDA_ADC_3P3  |     3.3 |
-
-| Unassigned signal                      |
-|----------------------------------------|
-| SPI1 SS GPIO                           |
-| SPI2 SS GPIO                           |
-| GPIO LEDs                              |
-| GPIO buttons                           |
-| spi/hd44780 display (mux on same pins) |
