@@ -23,7 +23,7 @@ for group, pins in groupby(data, lambda row: row[9]):
         starty = y
         for pin in pins:
             y -= 100
-            print("X %s %s 0 %d 100 R 40 50 %d 1 I" % (pin[0], pin[1], y, groupno))
+            print("X %s %s 0 %d 150 R 40 50 %d 1 I" % (pin[0], pin[1], y, groupno))
         if power_group:
             mid = (starty - 100 + y) // 2
             print("T 900 -150 %d 50 0 %d 1 %s Normal 0 C C" % ((mid, groupno, power_group)))
