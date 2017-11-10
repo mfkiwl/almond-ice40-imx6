@@ -247,7 +247,7 @@
 | VDD_SOC_IN        | J9         | VDD_SOC_IN    | POWER     | POWER        |                          |                |                         |                                               | POWER           |
 | VDD_SOC_IN        | J10        | VDD_SOC_IN    | POWER     | POWER        |                          |                |                         |                                               | POWER           |
 | VDD_SOC_IN        | K9         | VDD_SOC_IN    | POWER     | POWER        |                          |                |                         |                                               | POWER           |
-| VDD_SOC_IN        | 10         | VDD_SOC_IN    | POWER     | POWER        |                          |                |                         |                                               | POWER           |
+| VDD_SOC_IN        | K10        | VDD_SOC_IN    | POWER     | POWER        |                          |                |                         |                                               | POWER           |
 | VDD_USB_CAP       | R12        | VDD_USB_CAP   | POWER     | POWER        |                          |                |                         |                                               | POWER           |
 | VDDA_ADC_3P3      | L13        | VDDA_ADC_3P3  | POWER     | POWER        |                          |                |                         |                                               | POWER           |
 | NGND_KEL0         | M12        |               | POWER     | POWER        |                          |                |                         |                                               | POWER           |
