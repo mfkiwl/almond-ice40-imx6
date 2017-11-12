@@ -1,4 +1,5 @@
 EESchema Schematic File Version 3
+LIBS:ddr3-96fbga
 LIBS:mcimx6y2dvm
 LIBS:zener
 LIBS:xtal
