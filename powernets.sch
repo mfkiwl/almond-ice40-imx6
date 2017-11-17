@@ -1,4 +1,7 @@
 EESchema Schematic File Version 3
+LIBS:ap24x1-u-dfn3030
+LIBS:fpf1321
+LIBS:emmc-100fbga
 LIBS:ddr3-96fbga
 LIBS:mcimx6y2dvm
 LIBS:zener

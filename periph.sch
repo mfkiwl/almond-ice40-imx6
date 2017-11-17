@@ -1,4 +1,7 @@
 EESchema Schematic File Version 3
+LIBS:ap24x1-u-dfn3030
+LIBS:fpf1321
+LIBS:emmc-100fbga
 LIBS:ddr3-96fbga
 LIBS:mcimx6y2dvm
 LIBS:zener
@@ -155,7 +158,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 10
+Sheet 6 10
 Title ""
 Date ""
 Rev ""

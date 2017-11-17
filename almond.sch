@@ -1,4 +1,7 @@
 EESchema Schematic File Version 3
+LIBS:ap24x1-u-dfn3030
+LIBS:fpf1321
+LIBS:emmc-100fbga
 LIBS:ddr3-96fbga
 LIBS:mcimx6y2dvm
 LIBS:zener
@@ -223,4 +226,6 @@ F1 "powernets.sch" 60
 $EndSheet
 Text Notes 4250 3450 0    200  ~ 40
 DDR3
+Text Notes 6250 3750 0    200  ~ 40
+eMMC\nSD
 $EndSCHEMATC
