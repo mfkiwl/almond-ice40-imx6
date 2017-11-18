@@ -158,7 +158,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 10
+Sheet 1 11
 Title "Almond"
 Date "2017-11-02"
 Rev "0"
@@ -228,4 +228,12 @@ Text Notes 4250 3450 0    200  ~ 40
 DDR3
 Text Notes 6250 3750 0    200  ~ 40
 eMMC\nSD
+$Sheet
+S 4000 950  1450 1350
+U 5A0FEE94
+F0 "imx6control" 50
+F1 "imx6control.sch" 50
+$EndSheet
+Text Notes 4150 1900 0    200  ~ 40
+i.MX6\nControl
 $EndSCHEMATC

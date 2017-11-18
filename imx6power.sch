@@ -158,7 +158,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 10
+Sheet 2 11
 Title ""
 Date ""
 Rev ""
@@ -182,73 +182,23 @@ $EndComp
 Text GLabel 2550 2050 0    50   Input ~ 0
 PP_VDD_SOC_IN
 Wire Wire Line
-	2550 2050 2900 2050
+	2550 2050 4400 2050
 Wire Wire Line
-	2900 2050 3250 2050
-Wire Wire Line
-	3250 2050 3600 2050
-Wire Wire Line
-	3600 2050 3900 2050
-Wire Wire Line
-	3900 2050 4400 2050
-Wire Wire Line
-	4400 2050 4400 2150
-Wire Wire Line
-	4400 2150 4400 2250
-Wire Wire Line
-	4400 2250 4400 2350
-Wire Wire Line
-	4400 2350 4400 2450
-Wire Wire Line
-	4400 2450 4400 2550
+	4400 2050 4400 2550
 Connection ~ 4400 2150
 Connection ~ 4400 2250
 Connection ~ 4400 2350
 Connection ~ 4400 2450
 Wire Wire Line
-	6600 1400 6950 1400
+	6600 1400 8300 1400
 Wire Wire Line
-	6950 1400 7300 1400
-Wire Wire Line
-	7300 1400 7650 1400
-Wire Wire Line
-	7650 1400 8300 1400
-Wire Wire Line
-	6600 1400 6600 1500
-Wire Wire Line
-	6600 1500 6600 1600
-Wire Wire Line
-	6600 1600 6600 1700
+	6600 1400 6600 1700
 Connection ~ 6600 1600
 Connection ~ 6600 1500
 Wire Wire Line
-	6600 1950 6950 1950
+	6600 1950 8300 1950
 Wire Wire Line
-	6950 1950 7300 1950
-Wire Wire Line
-	7300 1950 7650 1950
-Wire Wire Line
-	7650 1950 8000 1950
-Wire Wire Line
-	8000 1950 8300 1950
-Wire Wire Line
-	6600 1950 6600 2050
-Wire Wire Line
-	6600 2050 6600 2150
-Wire Wire Line
-	6600 2150 6600 2250
-Wire Wire Line
-	6600 2250 6600 2350
-Wire Wire Line
-	6600 2350 6600 2450
-Wire Wire Line
-	6600 2450 6600 2550
-Wire Wire Line
-	6600 2550 6600 2650
-Wire Wire Line
-	6600 2650 6600 2750
-Wire Wire Line
-	6600 2750 6600 2850
+	6600 1950 6600 2850
 Connection ~ 6600 2050
 Connection ~ 6600 2150
 Connection ~ 6600 2250
@@ -258,23 +208,13 @@ Connection ~ 6600 2550
 Connection ~ 6600 2650
 Connection ~ 6600 2750
 Wire Wire Line
-	6600 3150 6950 3150
-Wire Wire Line
-	6950 3150 7300 3150
-Wire Wire Line
-	7300 3150 8300 3150
+	6600 3150 8300 3150
 Wire Wire Line
 	6600 3250 6600 3150
 Wire Wire Line
-	8300 3500 7300 3500
+	6600 3500 8300 3500
 Wire Wire Line
-	7300 3500 6950 3500
-Wire Wire Line
-	6950 3500 6600 3500
-Wire Wire Line
-	6600 3850 6950 3850
-Wire Wire Line
-	6950 3850 8300 3850
+	6600 3850 8300 3850
 Connection ~ 6650 4850
 Wire Wire Line
 	6600 4850 6650 4850
@@ -345,53 +285,7 @@ Connection ~ 6650 7050
 Wire Wire Line
 	6650 7050 6600 7050
 Wire Wire Line
-	6650 4750 6650 4850
-Wire Wire Line
-	6650 4850 6650 4950
-Wire Wire Line
-	6650 4950 6650 5050
-Wire Wire Line
-	6650 5050 6650 5150
-Wire Wire Line
-	6650 5150 6650 5250
-Wire Wire Line
-	6650 5250 6650 5350
-Wire Wire Line
-	6650 5350 6650 5450
-Wire Wire Line
-	6650 5450 6650 5550
-Wire Wire Line
-	6650 5550 6650 5650
-Wire Wire Line
-	6650 5650 6650 5750
-Wire Wire Line
-	6650 5750 6650 5850
-Wire Wire Line
-	6650 5850 6650 5950
-Wire Wire Line
-	6650 5950 6650 6050
-Wire Wire Line
-	6650 6050 6650 6150
-Wire Wire Line
-	6650 6150 6650 6250
-Wire Wire Line
-	6650 6250 6650 6350
-Wire Wire Line
-	6650 6350 6650 6450
-Wire Wire Line
-	6650 6450 6650 6550
-Wire Wire Line
-	6650 6550 6650 6650
-Wire Wire Line
-	6650 6650 6650 6750
-Wire Wire Line
-	6650 6750 6650 6850
-Wire Wire Line
-	6650 6850 6650 6950
-Wire Wire Line
-	6650 6950 6650 7050
-Wire Wire Line
-	6650 7050 6650 7150
+	6650 4750 6650 7150
 Wire Wire Line
 	6600 4750 6650 4750
 $Comp
@@ -475,53 +369,7 @@ Connection ~ 4350 7050
 Wire Wire Line
 	4350 7050 4400 7050
 Wire Wire Line
-	4350 4750 4350 4850
-Wire Wire Line
-	4350 4850 4350 4950
-Wire Wire Line
-	4350 4950 4350 5050
-Wire Wire Line
-	4350 5050 4350 5150
-Wire Wire Line
-	4350 5150 4350 5250
-Wire Wire Line
-	4350 5250 4350 5350
-Wire Wire Line
-	4350 5350 4350 5450
-Wire Wire Line
-	4350 5450 4350 5550
-Wire Wire Line
-	4350 5550 4350 5650
-Wire Wire Line
-	4350 5650 4350 5750
-Wire Wire Line
-	4350 5750 4350 5850
-Wire Wire Line
-	4350 5850 4350 5950
-Wire Wire Line
-	4350 5950 4350 6050
-Wire Wire Line
-	4350 6050 4350 6150
-Wire Wire Line
-	4350 6150 4350 6250
-Wire Wire Line
-	4350 6250 4350 6350
-Wire Wire Line
-	4350 6350 4350 6450
-Wire Wire Line
-	4350 6450 4350 6550
-Wire Wire Line
-	4350 6550 4350 6650
-Wire Wire Line
-	4350 6650 4350 6750
-Wire Wire Line
-	4350 6750 4350 6850
-Wire Wire Line
-	4350 6850 4350 6950
-Wire Wire Line
-	4350 6950 4350 7050
-Wire Wire Line
-	4350 7050 4350 7150
+	4350 4750 4350 7150
 Wire Wire Line
 	4400 4750 4350 4750
 $Comp
@@ -538,9 +386,7 @@ $EndComp
 Text GLabel 2550 4300 0    50   Input ~ 0
 PP_VDDA_ADC_3P3
 Wire Wire Line
-	2550 4300 4300 4300
-Wire Wire Line
-	4300 4300 4400 4300
+	2550 4300 4400 4300
 Wire Wire Line
 	4400 4400 4300 4400
 Wire Wire Line
@@ -549,17 +395,11 @@ Connection ~ 4300 4300
 Text GLabel 2550 3850 0    50   Input ~ 0
 PP_VDD_SNVS_IN
 Wire Wire Line
-	4400 3850 3900 3850
-Wire Wire Line
-	3900 3850 2550 3850
+	2550 3850 4400 3850
 Text GLabel 2550 3150 0    50   Input ~ 0
 PP_VDD_HIGH_IN
 Wire Wire Line
-	2550 3150 3550 3150
-Wire Wire Line
-	3550 3150 3900 3150
-Wire Wire Line
-	3900 3150 4400 3150
+	2550 3150 4400 3150
 $Comp
 L C C?
 U 1 1 5A04FDA4

@@ -1,0 +1,551 @@
+EESchema Schematic File Version 3
+LIBS:ap24x1-u-dfn3030
+LIBS:fpf1321
+LIBS:emmc-100fbga
+LIBS:ddr3-96fbga
+LIBS:mcimx6y2dvm
+LIBS:zener
+LIBS:xtal
+LIBS:vutmi
+LIBS:vusb
+LIBS:vtarget
+LIBS:vpll
+LIBS:vout
+LIBS:vio
+LIBS:vin
+LIBS:vcore
+LIBS:vbu
+LIBS:varef
+LIBS:vana
+LIBS:usb334x
+LIBS:usb
+LIBS:usb-c
+LIBS:ts3usb31
+LIBS:tps6040x
+LIBS:tps27081a
+LIBS:tpd4s012
+LIBS:tp4056
+LIBS:tp4055
+LIBS:tlv713
+LIBS:thermistor
+LIBS:testpoint
+LIBS:test
+LIBS:tactile-4
+LIBS:spiflash
+LIBS:solder-jumper-nc
+LIBS:slide-spdt
+LIBS:sit1602
+LIBS:sip32401a
+LIBS:si8410
+LIBS:schottky
+LIBS:rs485trx-fullduplex
+LIBS:relay
+LIBS:r4
+LIBS:r
+LIBS:pwr
+LIBS:powersyms
+LIBS:power_flag
+LIBS:pot
+LIBS:pnp
+LIBS:pmos
+LIBS:phone-3
+LIBS:op-amp
+LIBS:nup4114
+LIBS:npn
+LIBS:nmos
+LIBS:nmos-pmos-sot23-6
+LIBS:nmos-pmos-sot-666
+LIBS:mun53
+LIBS:mpu6050
+LIBS:mpu-6050
+LIBS:mpl3115a2
+LIBS:mounting-hole
+LIBS:mounthole
+LIBS:mkl27zxxvfm4
+LIBS:mkl03zxxvfk4
+LIBS:mkl03zxxvfg4
+LIBS:microsd
+LIBS:mic9409x
+LIBS:mic5365
+LIBS:mic5205
+LIBS:mic23031
+LIBS:mcp47x6-sot-23-6
+LIBS:mcp3221
+LIBS:mchck
+LIBS:max9938
+LIBS:max6070
+LIBS:max4737eud
+LIBS:mag3110
+LIBS:ltc3260
+LIBS:ltc3251
+LIBS:lt6106
+LIBS:lt6102
+LIBS:lpddrx16
+LIBS:lpc824
+LIBS:lpc812
+LIBS:ln1410
+LIBS:lm78xx-so8
+LIBS:lm3671
+LIBS:lm27313
+LIBS:lis2-lga12
+LIBS:led
+LIBS:ldo-sot-23-5
+LIBS:lcd5110
+LIBS:l
+LIBS:k22f-64lqfp
+LIBS:jumper
+LIBS:jtag
+LIBS:isp130301
+LIBS:ip425xcz12
+LIBS:ina199
+LIBS:in-amp
+LIBS:gnd
+LIBS:fuse
+LIBS:ferrite
+LIBS:esp-12
+LIBS:erc12864-1
+LIBS:dtc-npn
+LIBS:drv883x
+LIBS:drv8839
+LIBS:drv8838
+LIBS:drdc3105
+LIBS:debugheader
+LIBS:de-9
+LIBS:d
+LIBS:cp
+LIBS:conn-8
+LIBS:conn-7
+LIBS:conn-6
+LIBS:conn-5
+LIBS:conn-4
+LIBS:conn-3
+LIBS:conn-2x5
+LIBS:conn-2x4
+LIBS:conn-2
+LIBS:conn-1
+LIBS:com
+LIBS:cm1624
+LIBS:c
+LIBS:button-dpdt
+LIBS:buck-sot23-6
+LIBS:buck-sot23-5
+LIBS:bat
+LIBS:ant
+LIBS:ad8429
+LIBS:acs711ex
+LIBS:aat3681a
+LIBS:aat1217
+LIBS:USB3300
+LIBS:SAM3U-144
+LIBS:MKL26ZxxVFM4
+LIBS:ICE40HX4K-144
+LIBS:74vc2t45
+LIBS:74vc1t45
+LIBS:74avc4t245
+LIBS:2-spst
+LIBS:-vs
+LIBS:-15v
+LIBS:+vs
+LIBS:+5v
+LIBS:+3v3
+LIBS:+3v
+LIBS:+1v8
+LIBS:+1v2
+LIBS:+15v
+LIBS:+12v
+LIBS:almond-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 11 11
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCIMX6Y2DVM U?
+U 1 1 5A0FEF09
+P 4450 2800
+F 0 "U?" H 4450 3087 60  0000 C CNN
+F 1 "MCIMX6Y2DVM" H 4450 2981 60  0000 C CNN
+F 2 "" H 2300 1800 60  0001 C CNN
+F 3 "" H 2300 1800 60  0001 C CNN
+	1    4450 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L XTAL-4 Y?
+U 1 1 5A0FF000
+P 3050 5600
+F 0 "Y?" V 3265 5600 50  0000 C CNN
+F 1 "24MHz" V 3174 5600 50  0000 C CNN
+F 2 "" H 3050 5600 60  0000 C CNN
+F 3 "" H 3050 5600 60  0000 C CNN
+F 4 "XRCGB24M000F3N00R0" H 3050 5600 60  0001 C CNN "Part Number"
+	1    3050 5600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C C?
+U 1 1 5A0FF0BC
+P 3300 5600
+F 0 "C?" H 3373 5546 50  0000 L CNN
+F 1 "6p" H 3373 5455 50  0000 L CNN
+F 2 "" H 3200 5750 60  0000 C CNN
+F 3 "" H 3200 5750 60  0000 C CNN
+	1    3300 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 5350 3300 5350
+Wire Wire Line
+	3300 5350 3300 5600
+Wire Wire Line
+	3300 5600 3200 5600
+$Comp
+L C C?
+U 1 1 5A0FF11D
+P 2800 5600
+F 0 "C?" H 2728 5546 50  0000 R CNN
+F 1 "6p" H 2728 5455 50  0000 R CNN
+F 2 "" H 2700 5750 60  0000 C CNN
+F 3 "" H 2700 5750 60  0000 C CNN
+	1    2800 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 5600 2800 5250
+Wire Wire Line
+	2800 5250 3450 5250
+Wire Wire Line
+	2900 5600 2800 5600
+$Comp
+L COM #PWR?
+U 1 1 5A0FF1D1
+P 3000 5750
+F 0 "#PWR?" V 3275 5750 60  0001 C CNN
+F 1 "COM" H 3160 5635 30  0001 C CNN
+F 2 "" H 3155 5760 60  0000 C CNN
+F 3 "" H 3155 5760 60  0000 C CNN
+	1    3000 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L COM #PWR?
+U 1 1 5A0FF1EB
+P 3100 5750
+F 0 "#PWR?" V 3375 5750 60  0001 C CNN
+F 1 "COM" H 3260 5635 30  0001 C CNN
+F 2 "" H 3255 5760 60  0000 C CNN
+F 3 "" H 3255 5760 60  0000 C CNN
+	1    3100 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L COM #PWR?
+U 1 1 5A0FF1FE
+P 3300 5800
+F 0 "#PWR?" V 3575 5800 60  0001 C CNN
+F 1 "COM" H 3460 5685 30  0001 C CNN
+F 2 "" H 3455 5810 60  0000 C CNN
+F 3 "" H 3455 5810 60  0000 C CNN
+	1    3300 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L COM #PWR?
+U 1 1 5A0FF215
+P 2800 5800
+F 0 "#PWR?" V 3075 5800 60  0001 C CNN
+F 1 "COM" H 2960 5685 30  0001 C CNN
+F 2 "" H 2955 5810 60  0000 C CNN
+F 3 "" H 2955 5810 60  0000 C CNN
+	1    2800 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L XTAL Y?
+U 1 1 5A0FF564
+P 5850 5700
+F 0 "Y?" V 5678 5700 40  0000 C CNN
+F 1 "32.768kHz" V 5754 5700 40  0000 C CNN
+F 2 "" H 5850 5700 60  0000 C CNN
+F 3 "" H 5850 5700 60  0000 C CNN
+F 4 "FX135A-327" H 5850 5700 60  0001 C CNN "Part Number"
+	1    5850 5700
+	0    1    1    0   
+$EndComp
+$Comp
+L C C?
+U 1 1 5A0FF651
+P 6050 5700
+F 0 "C?" H 6123 5646 50  0000 L CNN
+F 1 "19p" H 6123 5555 50  0000 L CNN
+F 2 "" H 5950 5850 60  0000 C CNN
+F 3 "" H 5950 5850 60  0000 C CNN
+	1    6050 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5A0FF6A9
+P 5650 5700
+F 0 "C?" H 5723 5646 50  0000 L CNN
+F 1 "19p" H 5723 5555 50  0000 L CNN
+F 2 "" H 5550 5850 60  0000 C CNN
+F 3 "" H 5550 5850 60  0000 C CNN
+	1    5650 5700
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 5700 5650 5350
+Wire Wire Line
+	5650 5350 5450 5350
+Wire Wire Line
+	5450 5250 6050 5250
+Wire Wire Line
+	6050 5250 6050 5700
+Wire Wire Line
+	6050 5700 5950 5700
+Wire Wire Line
+	5750 5700 5650 5700
+$Comp
+L COM #PWR?
+U 1 1 5A0FF8AC
+P 5650 5900
+F 0 "#PWR?" V 5925 5900 60  0001 C CNN
+F 1 "COM" H 5810 5785 30  0001 C CNN
+F 2 "" H 5805 5910 60  0000 C CNN
+F 3 "" H 5805 5910 60  0000 C CNN
+	1    5650 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L COM #PWR?
+U 1 1 5A0FF8EF
+P 6050 5900
+F 0 "#PWR?" V 6325 5900 60  0001 C CNN
+F 1 "COM" H 6210 5785 30  0001 C CNN
+F 2 "" H 6205 5910 60  0000 C CNN
+F 3 "" H 6205 5910 60  0000 C CNN
+	1    6050 5900
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3450 3500
+NoConn ~ 5450 4600
+NoConn ~ 3450 3700
+NoConn ~ 3450 3800
+NoConn ~ 3450 3900
+NoConn ~ 3450 4000
+NoConn ~ 3450 4100
+NoConn ~ 3450 4200
+NoConn ~ 3450 4300
+NoConn ~ 3450 4400
+NoConn ~ 3450 4500
+NoConn ~ 3450 4600
+Text GLabel 3250 3100 0    50   BiDi ~ 0
+~RESET
+Wire Wire Line
+	3250 3100 3450 3100
+$Comp
+L JUMPER J?
+U 1 1 5A100758
+P 2800 3400
+F 0 "J?" H 2800 3550 50  0000 C CNN
+F 1 "FORCE SERIAL" H 2800 3350 50  0000 C CNN
+F 2 "" H 3100 3150 60  0000 C CNN
+F 3 "" H 3100 3150 60  0000 C CNN
+	1    2800 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 5A100D40
+P 2400 3050
+F 0 "R?" H 2468 2946 50  0000 L CNN
+F 1 "0" H 2468 2855 50  0000 L CNN
+F 2 "" H 2535 2890 60  0000 C CNN
+F 3 "" H 2535 2890 60  0000 C CNN
+	1    2400 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 3400 2700 3400
+Text GLabel 2300 3000 0    50   Input ~ 0
+PP_SNVS_IN
+Wire Wire Line
+	2300 3000 2400 3000
+Wire Wire Line
+	2400 3000 2400 3050
+Wire Wire Line
+	2400 3350 2400 3400
+Wire Wire Line
+	2900 3400 3450 3400
+NoConn ~ 3450 3300
+Text Notes 1050 3750 0    50   ~ 0
+BOOT = 00: eMMC, SD manuf, serial\nBOOT = 01: SD manuf, serial (FORCE SERIAL on)
+NoConn ~ 3450 4850
+NoConn ~ 3450 4950
+$Comp
+L JTAG J?
+U 1 1 5A10197E
+P 7350 1900
+F 0 "J?" H 7350 2365 50  0000 C CNN
+F 1 "JTAG" H 7350 2274 50  0000 C CNN
+F 2 "" H 7250 1700 50  0000 C CNN
+F 3 "" H 7250 1700 50  0000 C CNN
+	1    7350 1900
+	-1   0    0    -1  
+$EndComp
+Text GLabel 6550 2100 0    50   BiDi ~ 0
+~RESET
+Wire Wire Line
+	6550 2100 6750 2100
+Text GLabel 8050 1700 2    50   Input ~ 0
+PP_GPIO
+$Comp
+L COM #PWR?
+U 1 1 5A101B9A
+P 8050 2250
+F 0 "#PWR?" V 8325 2250 60  0001 C CNN
+F 1 "COM" H 8210 2135 30  0001 C CNN
+F 2 "" H 8205 2260 60  0000 C CNN
+F 3 "" H 8205 2260 60  0000 C CNN
+	1    8050 2250
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 2100 7950 2100
+Wire Wire Line
+	8050 1800 8050 1900
+Wire Wire Line
+	8050 1900 8050 2100
+Wire Wire Line
+	8050 2100 8050 2250
+Wire Wire Line
+	7950 1900 8050 1900
+Connection ~ 8050 2100
+Wire Wire Line
+	7950 1800 8050 1800
+Connection ~ 8050 1900
+Wire Wire Line
+	8050 1700 7950 1700
+$Comp
+L COM #PWR?
+U 1 1 5A101D26
+P 5550 3650
+F 0 "#PWR?" V 5825 3650 60  0001 C CNN
+F 1 "COM" H 5710 3535 30  0001 C CNN
+F 2 "" H 5705 3660 60  0000 C CNN
+F 3 "" H 5705 3660 60  0000 C CNN
+	1    5550 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 3550 5550 3550
+Wire Wire Line
+	5550 3550 5550 3650
+NoConn ~ 5450 3450
+Wire Wire Line
+	5450 3350 6000 3350
+Text Label 5950 3350 2    50   ~ 0
+JTAG_TDO
+Wire Wire Line
+	5450 3250 6000 3250
+Wire Wire Line
+	6000 3150 5450 3150
+Wire Wire Line
+	5450 3050 6000 3050
+Text Label 5950 3250 2    50   ~ 0
+JTAG_TDI
+Text Label 5950 3150 2    50   ~ 0
+JTAG_TMS
+Text Label 5950 3050 2    50   ~ 0
+JTAG_TCK
+Entry Wire Line
+	6100 2950 6000 3050
+Entry Wire Line
+	6100 3150 6000 3250
+Entry Wire Line
+	6100 3050 6000 3150
+Entry Wire Line
+	6100 3250 6000 3350
+Wire Wire Line
+	6750 2000 6200 2000
+Text Label 6250 2000 0    50   ~ 0
+JTAG_TDO
+Wire Wire Line
+	6750 1900 6200 1900
+Wire Wire Line
+	6200 1800 6750 1800
+Wire Wire Line
+	6750 1700 6200 1700
+Text Label 6250 1900 0    50   ~ 0
+JTAG_TDI
+Text Label 6250 1800 0    50   ~ 0
+JTAG_TMS
+Text Label 6250 1700 0    50   ~ 0
+JTAG_TCK
+Entry Wire Line
+	6100 2100 6200 2000
+Entry Wire Line
+	6100 1900 6200 1800
+Entry Wire Line
+	6100 2000 6200 1900
+Entry Wire Line
+	6100 1800 6200 1700
+Wire Bus Line
+	6100 1800 6100 1900
+Wire Bus Line
+	6100 1900 6100 2000
+Wire Bus Line
+	6100 2000 6100 2100
+Wire Bus Line
+	6100 2100 6100 2950
+Wire Bus Line
+	6100 2950 6100 3050
+Wire Bus Line
+	6100 3050 6100 3150
+Wire Bus Line
+	6100 3150 6100 3250
+$Comp
+L TACTILE-4 S?
+U 1 1 5A102FCC
+P 2950 2750
+F 0 "S?" H 2950 2986 60  0000 C CNN
+F 1 "TACTILE-4" H 2950 3000 60  0001 C CNN
+F 2 "" H 2950 2750 60  0000 C CNN
+F 3 "" H 2950 2750 60  0000 C CNN
+	1    2950 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L COM #PWR?
+U 1 1 5A1030B1
+P 2750 2800
+F 0 "#PWR?" V 3025 2800 60  0001 C CNN
+F 1 "COM" H 2910 2685 30  0001 C CNN
+F 2 "" H 2905 2810 60  0000 C CNN
+F 3 "" H 2905 2810 60  0000 C CNN
+	1    2750 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 2750 2750 2800
+Text Notes 3150 2250 2    50   ~ 0
+XXX add power button connector?
+Wire Wire Line
+	3150 2750 3350 2750
+Wire Wire Line
+	3350 3000 3450 3000
+Wire Wire Line
+	3350 2750 3350 3000
+NoConn ~ 3150 2650
+NoConn ~ 2750 2650
+$EndSCHEMATC

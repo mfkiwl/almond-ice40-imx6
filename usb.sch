@@ -158,7 +158,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 10
+Sheet 5 11
 Title ""
 Date ""
 Rev ""
@@ -168,4 +168,15 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+$Comp
+L MCIMX6Y2DVM U?
+U 11 1 5A0FE973
+P 5200 3100
+F 0 "U?" H 5200 3387 60  0000 C CNN
+F 1 "MCIMX6Y2DVM" H 5200 3281 60  0000 C CNN
+F 2 "" H 3050 2100 60  0001 C CNN
+F 3 "" H 3050 2100 60  0001 C CNN
+	11   5200 3100
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
