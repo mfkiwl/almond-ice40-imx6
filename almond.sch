@@ -236,4 +236,6 @@ F1 "imx6control.sch" 50
 $EndSheet
 Text Notes 4150 1900 0    200  ~ 40
 i.MX6\nControl
+Text Notes 4250 5300 0    200  ~ 40
+USB
 $EndSCHEMATC
