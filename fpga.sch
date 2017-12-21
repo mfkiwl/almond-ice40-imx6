@@ -1,4 +1,6 @@
 EESchema Schematic File Version 3
+LIBS:tpd3s014
+LIBS:rtl8188eus
 LIBS:ap24x1-u-dfn3030
 LIBS:fpf1321
 LIBS:emmc-100fbga
@@ -158,7 +160,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 8 11
+Sheet 8 12
 Title ""
 Date ""
 Rev ""

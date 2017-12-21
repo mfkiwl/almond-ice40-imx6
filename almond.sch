@@ -1,4 +1,6 @@
 EESchema Schematic File Version 3
+LIBS:tpd3s014
+LIBS:rtl8188eus
 LIBS:ap24x1-u-dfn3030
 LIBS:fpf1321
 LIBS:emmc-100fbga
@@ -158,7 +160,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 11
+Sheet 1 12
 Title "Almond"
 Date "2017-11-02"
 Rev "0"
@@ -193,7 +195,7 @@ F0 "usb" 60
 F1 "usb.sch" 60
 $EndSheet
 $Sheet
-S 8000 2800 1450 1350
+S 2000 6500 1450 1350
 U 59FBAC53
 F0 "periph" 60
 F1 "periph.sch" 60
@@ -226,8 +228,8 @@ F1 "powernets.sch" 60
 $EndSheet
 Text Notes 4250 3450 0    200  ~ 40
 DDR3
-Text Notes 6250 3750 0    200  ~ 40
-eMMC\nSD
+Text Notes 6250 3450 0    200  ~ 40
+eMMC
 $Sheet
 S 4000 950  1450 1350
 U 5A0FEE94
@@ -236,6 +238,14 @@ F1 "imx6control.sch" 50
 $EndSheet
 Text Notes 4150 1900 0    200  ~ 40
 i.MX6\nControl
-Text Notes 4250 5300 0    200  ~ 40
-USB
+Text Notes 4250 5600 0    200  ~ 40
+USB\nWLAN
+$Sheet
+S 8000 2800 1450 1350
+U 5A1F2DC0
+F0 "sd" 60
+F1 "sd.sch" 60
+$EndSheet
+Text Notes 8250 3450 0    200  ~ 40
+SD
 $EndSCHEMATC
